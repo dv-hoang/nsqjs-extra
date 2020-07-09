@@ -1,4 +1,3 @@
-
 <p align="center"><h1 align="center">
   nsqjs-extra
 </h1>
@@ -32,8 +31,10 @@ npm add nsqjs-extra
 # Usage
 
 ```js
-// @TODO
-const {} = require('nsqjs-extra')
+const { Writer } = require('nsqjs-extra')
+const writer = new Writer('127.0.0.1', '4151')
+await writer.publish('topic', 'message')
+await writer.close()
 ```
 
 # Example
