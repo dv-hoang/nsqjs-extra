@@ -1,10 +1,10 @@
-const { t } = require('../index.js')
+const { Writer } = require('../index')
 
-test('true is true', () => {
-  expect(true).toBe(true)
-})
+test('writer promise publish', async done => {
+  const writer = new Writer('127.0.0.1', '4151')
+  const rs = await writer.publish('topic', 'msg').catch(() => false)
+  expect(rs).toBe(true)
 
-test('test is true', () => {
-  const r = t()
-  expect(r).toBe(true)
+  await writer.close()
+  done()
 })
