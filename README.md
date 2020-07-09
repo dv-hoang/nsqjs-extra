@@ -37,14 +37,10 @@ await writer.publish('topic', 'message')
 await writer.close()
 ```
 
-# Example
-
-<!-- TODO -->
-
 # Contributing
 
 Please consult [CONTRIBUTING](./CONTRIBUTING.md) for guidelines on contributing to this project.
 
 # Author
 
-**nsqjs-extra** © [Hoang Dinh](https://github.com/kydrenw), Released under the [Apache-2.0](./LICENSE) License.
+**nsqjs-extra** © [Hoang Dinh](https://github.com/kydrenw), Released under the [MIT](./LICENSE) License.
