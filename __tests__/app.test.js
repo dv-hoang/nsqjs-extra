@@ -1,13 +1,34 @@
 const { Writer } = require('../index')
 
-test('writer promise publish', async done => {
-  const writer = new Writer('127.0.0.1', '4151')
+let writer = null
+
+beforeEach(() => {
+  writer = new Writer('127.0.0.1', '4150')
+})
+
+afterEach(async () => {
+  await writer.closeSync()
+  writer = null
+})
+
+afterAll(async done => done())
+
+test('should able connect sync', async () => {
+  const rs = await writer
+    .connectSync()
+    .then(() => true)
+    .catch(() => false)
+
+  expect(rs).toBe(true)
+})
+
+test('should able publish sync', async () => {
   await writer.connectSync()
 
-  const rs = await writer.publishSync('topic', 'msg').catch(() => false)
+  const rs = await writer
+    .publishSync('topic', 'msg')
+    .then(() => true)
+    .catch(() => false)
+
   expect(rs).toBe(true)
-
-  await writer.closeSync()
-
-  done()
 })
