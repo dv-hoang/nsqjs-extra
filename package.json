@@ -1,6 +1,6 @@
 {
-  "name": "@kydrenw/nsqjs-extra",
-  "version": "0.0.0",
+  "name": "nsqjs-extra",
+  "version": "0.0.1",
   "description": "Extra NodeJS client for the nsq client protocol.",
   "main": "index.js",
   "engines": {
