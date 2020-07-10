@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  Extra NodeJS client for the nsq client protocol.
+  Extra NodeJS client for the nsq client protocol, supporting async/await function.
 </p>
 
 <p align="center">
@@ -32,9 +32,10 @@ npm add nsqjs-extra
 
 ```js
 const { Writer } = require('nsqjs-extra')
-const writer = new Writer('127.0.0.1', '4151')
-await writer.publish('topic', 'message')
-await writer.close()
+const writer = new Writer('127.0.0.1', '4150')
+await writer.connectSync()
+await writer.publishSync('topic', 'message')
+await writer.closeSync()
 ```
 
 # Contributing
