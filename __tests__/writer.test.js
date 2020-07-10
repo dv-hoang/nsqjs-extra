@@ -32,3 +32,14 @@ test('should able publish sync', async () => {
 
   expect(rs).toBe(true)
 })
+
+test('should able defer publish sync', async () => {
+  await writer.connectSync()
+
+  const rs = await writer
+    .deferPublishSync('topic', ['msg'], 1000)
+    .then(() => true)
+    .catch(() => false)
+
+  expect(rs).toBe(true)
+})
