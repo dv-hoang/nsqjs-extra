@@ -21,7 +21,7 @@
     "email": "hoang.dinh21@gmail.com",
     "url": "https://github.com/kydrenw"
   },
-  "license": "Apache-2.0",
+  "license": "MIT",
   "keywords": [
     "nsqjs,client,promise,async"
   ],
