@@ -37,7 +37,7 @@
     "nsqjs": "^0.13.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.2.1",
+    "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^7.1.2",
     "@semantic-release/changelog": "^3.0.4",
     "@semantic-release/commit-analyzer": "^6.2.0",
@@ -62,7 +62,7 @@
     "jest": "^29.7.0",
     "lint-staged": "^9.2.0",
     "lockfile-lint": "^2.0.1",
-    "open-cli": "^5.0.0",
+    "open-cli": "^8.0.0",
     "prettier": "^1.18.2",
     "semantic-release": "^19.0.3",
     "sinon": "^9.0.2"
