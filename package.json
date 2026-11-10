@@ -19,19 +19,19 @@
   "author": {
     "name": "Hoang Dinh",
     "email": "hoang.dinh21@gmail.com",
-    "url": "https://github.com/kydrenw"
+    "url": "https://github.com/dv-hoang"
   },
   "license": "MIT",
   "keywords": [
     "nsqjs,client,promise,async"
   ],
-  "homepage": "https://github.com/kydrenw/nsqjs-extra",
+  "homepage": "https://github.com/dv-hoang/nsqjs-extra",
   "bugs": {
-    "url": "https://github.com/kydrenw/nsqjs-extra/issues"
+    "url": "https://github.com/dv-hoang/nsqjs-extra/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kydrenw/nsqjs-extra.git"
+    "url": "https://github.com/dv-hoang/nsqjs-extra.git"
   },
   "dependencies": {
     "nsqjs": "^0.13.0"
