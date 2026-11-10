@@ -1,6 +1,6 @@
 {
   "name": "nsqjs-extra",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Extra NodeJS client for the nsq client protocol.",
   "main": "index.js",
   "engines": {
