@@ -13,8 +13,6 @@ afterEach(async () => {
   reader = null
 })
 
-afterAll(async done => done())
-
 test('should able connect sync', async () => {
   const rs = await reader
     .connectSync()

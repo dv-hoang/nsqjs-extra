@@ -11,8 +11,6 @@ afterEach(async () => {
   writer = null
 })
 
-afterAll(async done => done())
-
 test('should able connect sync', async () => {
   const rs = await writer
     .connectSync()
